@@ -5,4 +5,8 @@ export class LifeExpectancyAverage {
     this.gender = gender;
     this.LifeExpectancyAverage = 73;
   }
+
+  calculateLifeExpectancyAverage() {
+    if
+  }
 }
