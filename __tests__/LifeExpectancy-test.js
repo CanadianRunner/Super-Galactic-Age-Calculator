@@ -11,5 +11,7 @@ test('It should change the life expectancy if the user inputs their species as h
   const lifeExpectancy = new LifeExpectancyAverage(false, true, "male");
   expect(lifeExpectancy.LifeExpectancyAverage).toEqual(62)
 });
+test('It should change the life expectancy if the user inputs their gender as female', () => {
 
+})
 });
