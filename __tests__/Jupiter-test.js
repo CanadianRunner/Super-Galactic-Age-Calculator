@@ -1,10 +1,10 @@
-import { Jupiter} from '../src/js/Jupiter';
+// import { Jupiter} from '../src/js/Jupiter';
 
-describe('Jupiter', () => {
-  test('It should correctly create a Jupiter Life expectancy calculation based on user inputted results', () => {
-    
-  })
-})
+// describe('Jupiter', () => {
+//   test('It should correctly create a Jupiter Life expectancy calculation based on user inputted results', () => {
+
+//   })
+// })
 
 // import { JupiterLifeExpectancy} from "../src/js/Jupiter";
 
