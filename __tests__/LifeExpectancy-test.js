@@ -3,7 +3,7 @@ export class LifeExpectancyAverage {
     this.bornOnEarth = bornOnEarth;
     this.humanSpecies = humanSpecies;
     this.gender = gender;
-    this.LifeExpectancyAverage = 72;
+    this.LifeExpectancyAverage = 71;
   }
 
   calculateLifeExpectancyAverage() {
