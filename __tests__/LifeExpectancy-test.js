@@ -1,5 +1,4 @@
-import { LifeExpectancyAverage } from "../src/LifeExpectancy.js";
-
+import {LifeExpectancyAverage} from "../src/js/LifeExpectancy.js"
 describe(LifeExpectancyAverage, () => {
 
 test('It should change the life expectancy if the user inputs their planet of birth as Earth', () => {
@@ -9,9 +8,10 @@ test('It should change the life expectancy if the user inputs their planet of bi
 });
 test('It should change the life expectancy if the user inputs their species as human', () => {
   const lifeExpectancy = new LifeExpectancyAverage(false, true, "male");
-  expect(lifeExpectancy.LifeExpectancyAverage).toEqual(62)
+  expect(lifeExpectancy.lifeExpectancyAverage).toEqual(62)
 });
-test('It should change the life expectancy if the user inputs their gender as female', () => {
-
-})
+test('It should change the life expectancy if the user inputs their sex as female', () => {
+  const lifeExpectancy = new LifeExpectancyAverage(false, false, "female");
+  expect(lifeExpectancy.lifeExpectancyAverage).toEqual(63);
+});
 });

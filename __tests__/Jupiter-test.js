@@ -1,17 +1,10 @@
-// import { Jupiter} from '../src/js/Jupiter';
 
-// describe('Jupiter', () => {
-//   test('It should correctly create a Jupiter Life expectancy calculation based on user inputted results', () => {
+import { LifeExpectancyAverage } from "../src/js/LifeExpectancy";
+import { JupiterLifeExpectancy } from "../src/js/Jupiter";
 
-//   })
-// })
+describe('JupiterLifeExpectancy', () => {
 
-// import { JupiterLifeExpectancy} from "../src/js/Jupiter";
-
-// // describe('jupiterLifeExpectancy', () => {
-// //   test('It should correctly create a Jupiter Life expectancy calculation based on inputted results', () => {
-// //     const newLifeExpectancy = new JupiterLifeExpectancy('male', true, false);
-// //     newLifeExpectancy.lifeExpectancyGenderCalc();
-// //     expect(newLifeExpectancy.averageLifeExpectancy).toEqual();
-// //   });
-// // });
+  test('It should correctly return the users age in Jupiter years.  A Jupiter year is 11.86 Earth Years', () => {
+    
+  })
+})
