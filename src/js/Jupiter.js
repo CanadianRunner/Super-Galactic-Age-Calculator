@@ -9,7 +9,8 @@ export class JupiterLifeExpectancy {
   jupiterAgeCalc () {
     this.ageOnJupiter = Math.round(this.ageOnEarth / this.jupiterYear);
   }
-  surpassedLifeExpectancy (LifeExpectancyAverage) {
-    this.differenceInAge = userLifeExpectancy.LifeExpectancyAverage - this.ageOnJupiter;
+   surpassedLifeExpectancy(LifeExpectancyAverage) {
+    this.differenceInAge = LifeExpectancyAverage - this.ageOnJupiter;
   }
+
 }
