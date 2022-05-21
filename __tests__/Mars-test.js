@@ -1,20 +1,20 @@
 import { LifeExpectancyAverage } from "../src/js/LifeExpectancy";
-import { JupiterLifeExpectancy } from "../src/js/Jupiter";
+import { MarsLifeExpectancy } from "../src/js/Mars";
 
-describe('JupiterLifeExpectancy', () => {
+describe('MarsLifeExpectancy', () => {
 
-  test('It should correctly return the users age in Jupiter years.  A Jupiter year is 11.86 Earth Years', () => {
-    let jupiterUser = new JupiterLifeExpectancy(36);
-    jupiterUser.jupiterAgeCalc();
-    expect(jupiterUser.ageOnJupiter).toEqual(3);
+  test('It should correctly return the users age in Martian years.  A Martian year is 1.88 Earth Years', () => {
+    let marsUser = new MarsLifeExpectancy(36);
+    marsUser.marsAgeCalc();
+    expect(marsUser.ageOnMars).toEqual(19);
   });
-  test('It should find the difference between the users life expectancy and Jupiter age.', () => {
-    let jupiterUser = new JupiterLifeExpectancy(48);
-    jupiterUser.jupiterAgeCalc();
+  test('It should find the difference between the users life expectancy and Martian age.', () => {
+    let marsUser = new MarsLifeExpectancy(48);
+    marsUser.marsAgeCalc();
     
     let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
     userLifeExpectancy.calculateLifeExpectancyAverage();
-    jupiterUser.surpassedLifeExpectancy(userLifeExpectancy.lifeExpectancyAverage);
-    expect(jupiterUser.differenceInAge).toEqual(76);
+    marsUser.surpassedLifeExpectancy(userLifeExpectancy.lifeExpectancyAverage);
+    expect(marsUser.differenceInAge).toEqual(54);
   })
 });
