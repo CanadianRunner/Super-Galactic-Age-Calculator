@@ -22,10 +22,10 @@ _This is a project I created at Epicodus that allows a user to determine their l
 
 1) Clone this repository to your desktop.
 2) Navigate to the now installed directory.
-3) Open the directory in your terminal and run $npm install
-4) Once your terminal indicates the install is complete, run $ npm run build
-5) To test the functions run $ npm run test
-6) When you're ready to view the a live server of the project run $ npm run start
+3) Open the directory in your terminal and run ==$npm install==.
+4) Once your terminal indicates the install is complete, run ==$ npm run build==.
+5) To test the functions run ==$ npm run test==.
+6) When you're ready to view the a live server of the project run ==$ npm run start==.
 
 ## Project can be found at:
 https://github.com/CanadianRunner/Super-Galactic-Age-Calculator.git
