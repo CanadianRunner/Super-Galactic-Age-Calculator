@@ -7,17 +7,17 @@ export class LifeExpectancyAverage {
   }
 
   calculateLifeExpectancyAverage() {
-    if(this.bornOnEarth === true) {
+    if (this.bornOnEarth === true) {
       this.lifeExpectancyAverage += 1;
     } else {
       this.lifeExpectancyAverage -= 10;
     }
-    if(this.humanSpecies === true) {
+    if (this.humanSpecies == true) {
       this.lifeExpectancyAverage += 1;
     } else {
       this.lifeExpectancyAverage -= 5;
     }
-    if(this.sex === "female") {
+    if (this.sex === "female") {
       this.lifeExpectancyAverage += 7;
     } else {
       this.lifeExpectancyAverage += 1;
@@ -25,5 +25,3 @@ export class LifeExpectancyAverage {
 
   }
 }
-
-
