@@ -22,7 +22,6 @@ export class LifeExpectancyAverage {
     } else {
       this.lifeExpectancyAverage += 1;
     }
- 
 
   }
 }

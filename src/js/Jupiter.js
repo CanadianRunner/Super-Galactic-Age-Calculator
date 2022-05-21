@@ -1,4 +1,6 @@
 export class JupiterLifeExpectancy {
-  constructor (convertedEarthAge) {
+  constructor (ageOnEarth) {
+    this.ageOnEarth = ageOnEarth;
+    this.ageOnJupiter
   }
 }
