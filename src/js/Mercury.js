@@ -2,7 +2,7 @@ export class MercuryLifeExpectancy {
   constructor (ageOnEarth) {
     this.ageOnEarth = ageOnEarth;
     this.ageOnMercury = 0;
-    this.mercuryYear = 1.88;
+    this.mercuryYear = 0.24;
     this.surpassedExpect = 0;
   }
   
