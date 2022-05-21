@@ -23,7 +23,7 @@ export class LifeExpectancyAverage {
       initialAge += 1;
     }
 
-    return lifeExpectancyAverage;
+    return initialAge;
 
   }
 
