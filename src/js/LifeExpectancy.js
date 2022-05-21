@@ -5,7 +5,7 @@ export class LifeExpectancyAverage {
     this.sex = sex;
     this.lifeExpectancyAverage = this.calculateLifeExpectancyAverage(71);
   }
-
+  
   calculateLifeExpectancyAverage(initialAge) {
     if (this.bornOnEarth === true) {
       initialAge += 1;
@@ -26,4 +26,9 @@ export class LifeExpectancyAverage {
     return lifeExpectancyAverage;
 
   }
+
+  calcExpectedAgePerPlanet(planetNum){
+    return planetNum * this.lifeExpectancyAverage
+  }
+
 }
