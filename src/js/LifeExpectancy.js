@@ -28,7 +28,7 @@ export class LifeExpectancyAverage {
   }
 
   calcExpectedAgePerPlanet(planetNum){
-    return planetNum * this.lifeExpectancyAverage
+    return  this.lifeExpectancyAverage / planetNum 
   }
 
 }

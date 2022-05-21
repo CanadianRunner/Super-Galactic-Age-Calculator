@@ -10,7 +10,7 @@ export class VenusLifeExpectancy {
     this.ageOnVenus = Math.round(this.ageOnEarth / this.venusYear);
   }
    surpassedLifeExpectancy(LifeExpectancyAverage) {
-    this.differenceInAge = Math.abs(LifeExpectancyAverage - this.ageOnVenus);
+    this.differenceInAge = Math.round(Math.abs(LifeExpectancyAverage - this.ageOnVenus));
     
   }
 
