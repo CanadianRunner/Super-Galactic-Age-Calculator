@@ -8,12 +8,12 @@
     "es6": true,
     "browser": true,
     "jquery": true,
-    "node": true,
-    "test": true
+    "node": true
   },
   "rules": {
       "semi": 1,
       "indent": ["warn", 2],
-      "no-debugger": "warn" 
+      "no-console": "warn",
+      "no-debugger": "warn"
   }
 }
