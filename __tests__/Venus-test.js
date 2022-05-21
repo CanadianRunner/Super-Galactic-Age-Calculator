@@ -16,5 +16,14 @@ describe('VenusLifeExpectancy', () => {
     userLifeExpectancy.calculateLifeExpectancyAverage();
     venusUser.surpassedLifeExpectancy(userLifeExpectancy.lifeExpectancyAverage);
     expect(venusUser.differenceInAge).toEqual(3);
-  })
+  });
+  test('If the user inputs a number exceeding the life expectancy, it should return a postive number.', () => {
+    let venusUser = new VenusLifeExpectancy(70);
+    venusUser.venusAgeCalc();
+    
+    let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
+    userLifeExpectancy.calculateLifeExpectancyAverage();
+    venusUser.surpassedLifeExpectancy(userLifeExpectancy.lifeExpectancyAverage);
+    expect(venusUser.differenceInAge).toEqual(33);
+  });
 });
