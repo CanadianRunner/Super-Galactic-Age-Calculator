@@ -9,8 +9,9 @@ export class MercuryLifeExpectancy {
   mercuryAgeCalc () {
     this.ageOnMercury = Math.round(this.ageOnEarth / this.mercuryYear);
   }
-   surpassedLifeExpectancy(LifeExpectancyAverage) {
-    this.differenceInAge = LifeExpectancyAverage - this.ageOnMercury;
+  surpassedLifeExpectancy(LifeExpectancyAverage) {
+    this.differenceInAge = Math.round(Math.abs(LifeExpectancyAverage - this.ageOnMercury));
+    
   }
 
 }

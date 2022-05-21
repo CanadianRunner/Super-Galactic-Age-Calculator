@@ -21,7 +21,6 @@ describe('VenusLifeExpectancy', () => {
     let venusUser = new VenusLifeExpectancy(90);
     venusUser.venusAgeCalc(); 
     let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
-
     let venusExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(venusUser.venusYear) 
     venusUser.surpassedLifeExpectancy(venusExpectedAge);
     expect(venusUser.differenceInAge).toEqual(16);

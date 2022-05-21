@@ -14,8 +14,8 @@ describe('JupiterLifeExpectancy', () => {
     jupiterUser.jupiterAgeCalc();
     
     let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
-    userLifeExpectancy.calculateLifeExpectancyAverage();
-    jupiterUser.surpassedLifeExpectancy(userLifeExpectancy.lifeExpectancyAverage);
-    expect(jupiterUser.differenceInAge).toEqual(76);
+    let jupiterExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(jupiterUser.jupiterYear);
+    jupiterUser.surpassedLifeExpectancy(jupiterExpectedAge);
+    expect(jupiterUser.differenceInAge).toEqual(3);
   })
 });

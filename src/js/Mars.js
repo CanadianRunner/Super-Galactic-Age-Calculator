@@ -9,8 +9,7 @@ export class MarsLifeExpectancy {
   marsAgeCalc () {
     this.ageOnMars = Math.round(this.ageOnEarth / this.marsYear);
   }
-   surpassedLifeExpectancy(LifeExpectancyAverage) {
-    this.differenceInAge = LifeExpectancyAverage - this.ageOnMars;
+  surpassedLifeExpectancy(LifeExpectancyAverage) {
+    this.differenceInAge = Math.round(Math.abs(LifeExpectancyAverage - this.ageOnMars));
   }
-
 }

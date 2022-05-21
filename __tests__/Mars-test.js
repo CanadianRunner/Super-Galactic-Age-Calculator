@@ -13,8 +13,8 @@ describe('MarsLifeExpectancy', () => {
     marsUser.marsAgeCalc();
     
     let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
-    userLifeExpectancy.calculateLifeExpectancyAverage();
-    marsUser.surpassedLifeExpectancy(userLifeExpectancy.lifeExpectancyAverage);
-    expect(marsUser.differenceInAge).toEqual(54);
+    let marsExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(marsUser.marsYear);
+    marsUser.surpassedLifeExpectancy(marsExpectedAge);
+    expect(marsUser.differenceInAge).toEqual(17);
   })
 });

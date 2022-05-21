@@ -13,8 +13,8 @@ describe('MecuryLifeExpectancy', () => {
     mercuryUser.mercuryAgeCalc();
     
     let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
-    userLifeExpectancy.calculateLifeExpectancyAverage();
-    mercuryUser.surpassedLifeExpectancy(userLifeExpectancy.lifeExpectancyAverage);
-    expect(mercuryUser.differenceInAge).toEqual(30);
+    let mercuryExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(mercuryUser.mercuryYear);
+    mercuryUser.surpassedLifeExpectancy(mercuryExpectedAge);
+    expect(mercuryUser.differenceInAge).toEqual(283);
   })
 });
