@@ -6,4 +6,8 @@ export class JupiterLifeExpectancy {
     this.surpassedExpect = 0;
   }
   
+  jupiterAgeCalc () {
+    this.ageOnJupiter = Math.round(this.ageOnEarth / this.jupiterYear);
+  }
+
 }
