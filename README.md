@@ -37,7 +37,7 @@ https://github.com/CanadianRunner/Super-Galactic-Age-Calculator.git
 
 ## License
 
-_If you have any questions or concerns feel free to contact me at seankeane93@gmail.com.
+If you have any questions or concerns feel free to contact me at seankeane93@gmail.com.
 
 *This is licensed under the MIT license*
 
