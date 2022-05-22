@@ -1,4 +1,3 @@
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -9,14 +8,14 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devtool: 'eval-source-map',  // new line
-  devServer: {                 // new line
-    contentBase: './dist'      // new line
+  devtool: 'eval-source-map',
+  devServer: {
+    contentBase: './dist'
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Super-Galactic-Age-Tracker',
+      title: 'superGalacticAgeCalculator',
       template: './src/index.html',
       inject: 'body'
     })

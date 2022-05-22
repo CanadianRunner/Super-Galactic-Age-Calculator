@@ -32,7 +32,7 @@ https://github.com/CanadianRunner/Super-Galactic-Age-Calculator.git
 
 ## Known Bugs
 
-* No known bugs.
+* In the tests "describe", "test", and "expect" can read as not defined.  This doesn't affect the applications functionality (all npm commands in setup function correctly).  This doesn't occur everytime I open the application, but please be aware this may occur on some machines/instances.
 
 
 ## License
