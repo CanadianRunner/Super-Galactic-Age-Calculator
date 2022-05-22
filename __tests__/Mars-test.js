@@ -16,5 +16,13 @@ describe('MarsLifeExpectancy', () => {
     let marsExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(marsUser.marsYear);
     marsUser.surpassedLifeExpectancy(marsExpectedAge);
     expect(marsUser.differenceInAge).toEqual(17);
-  })
+  });
+  test('If the user inputs a number exceeding the life expectancy, it should return a postive number.', () => {
+    let marsUser = new MarsLifeExpectancy(90);
+    marsUser.marsAgeCalc(); 
+    let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
+    let marsExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(marsUser.marsYear) 
+    marsUser.surpassedLifeExpectancy(marsExpectedAge);
+    expect(marsUser.differenceInAge).toEqual(5);
+  });
 });

@@ -17,5 +17,13 @@ describe('JupiterLifeExpectancy', () => {
     let jupiterExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(jupiterUser.jupiterYear);
     jupiterUser.surpassedLifeExpectancy(jupiterExpectedAge);
     expect(jupiterUser.differenceInAge).toEqual(3);
-  })
+  });
+  test('If the user inputs a number exceeding the life expectancy, it should return a postive number.', () => {
+    let jupiterUser = new JupiterLifeExpectancy(90);
+    jupiterUser.jupiterAgeCalc(); 
+    let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
+    let jupiterExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(jupiterUser.jupiterYear) 
+    jupiterUser.surpassedLifeExpectancy(jupiterExpectedAge);
+    expect(jupiterUser.differenceInAge).toEqual(1);
+  });
 });

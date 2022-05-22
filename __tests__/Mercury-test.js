@@ -16,5 +16,13 @@ describe('MecuryLifeExpectancy', () => {
     let mercuryExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(mercuryUser.mercuryYear);
     mercuryUser.surpassedLifeExpectancy(mercuryExpectedAge);
     expect(mercuryUser.differenceInAge).toEqual(283);
-  })
+  });
+  test('If the user inputs a number exceeding the life expectancy, it should return a postive number.', () => {
+    let mercuryUser = new MercuryLifeExpectancy(90);
+    mercuryUser.mercuryAgeCalc(); 
+    let userLifeExpectancy = new LifeExpectancyAverage(true, true, "female");
+    let mercuryExpectedAge = userLifeExpectancy.calcExpectedAgePerPlanet(mercuryUser.mercuryYear) 
+    mercuryUser.surpassedLifeExpectancy(mercuryExpectedAge);
+    expect(mercuryUser.differenceInAge).toEqual(42);
+  });
 });
